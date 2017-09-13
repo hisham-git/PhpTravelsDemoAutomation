@@ -1010,7 +1010,10 @@ public class UiHelper {
 	 * @param val
 	 * @param sec
 	 */
-	public static void fluentWaitForCssValue(final By locator, final String val, int sec) {
+	// disabled due to until(final Predicate<T> isTrue) not supported in Selenium 3
+	// See: https://stackoverflow.com/questions/42421148/wait-untilexpectedconditions-doesnt-work-any-more-in-selenium
+	
+	/*public static void fluentWaitForCssValue(final By locator, final String val, int sec) {
 		FluentWait<WebDriver> wait = new FluentWait<WebDriver>(Browser.getDriver()).withTimeout(sec, TimeUnit.SECONDS)
 				.pollingEvery(250, TimeUnit.MILLISECONDS).ignoring(NoSuchElementException.class);
 
@@ -1024,7 +1027,7 @@ public class UiHelper {
 			}
 		};
 		wait.until(predicate);
-	}
+	}*/
 
 	/**
 	 * @author Hisham

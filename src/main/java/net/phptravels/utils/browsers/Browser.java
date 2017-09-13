@@ -18,6 +18,7 @@ public class Browser {
 	public Browser(String browser) {
 		switch (browser) {
 		case "firefox":
+			System.setProperty("webdriver.gecko.driver", "drivers\\ff\\geckodriver_v0.18.0.exe");
 			driver = new FirefoxDriver();
 			break;
 		case "ie":
