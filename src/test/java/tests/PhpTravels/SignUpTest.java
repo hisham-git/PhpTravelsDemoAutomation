@@ -15,7 +15,6 @@ import net.phptravels.utils.logging.Log;
 import net.phptravels.utils.dataProvider.ExcelDataMapper;
 import net.phptravels.utils.helpers.Nav;
 import steps.Tests.SignUpSteps;
-import tests.Abstract.AbstractTest;
 
 @Test(groups = { "SignUp" })
 public class SignUpTest extends AbstractTest {

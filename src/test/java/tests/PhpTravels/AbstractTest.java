@@ -1,4 +1,4 @@
-package tests.Abstract;
+package tests.PhpTravels;
 
 
 import java.lang.reflect.Method;
